@@ -2,195 +2,229 @@
 <html lang="en">
 
 <head>
-
     <meta charset="UTF-8">
-
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>ENHYPEN Bias Experience</title>
 
     <link rel="stylesheet" href="style.css">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-<!-- ========================= -->
-<!-- PAGE 1 -->
-<!-- ========================= -->
+    <!-- =========================
+         PAGE 1 - WELCOME
+    ========================== -->
 
-<section id="welcomePage" class="page active">
+    <section id="welcomePage" class="page active">
 
-    <div class="container">
+        <div class="overlay"></div>
 
-        <img src="images/ot7.jpg"
-             alt="ENHYPEN OT7"
-             class="ot7-image">
+        <div class="content">
 
-        <h1>
-            Welcome to the ENHYPEN Bias Experience
-        </h1>
+            <img
+                src="images/ot7.jpg"
+                alt="ENHYPEN OT7"
+                class="heroImage">
 
-        <p>
+            <h1>
+                Welcome to the<br>
+                ENHYPEN Bias Experience
+            </h1>
 
-            Discover your bias and learn interesting facts
-            about your favorite ENHYPEN member!
+            <p>
 
-        </p>
+                Discover your favorite member,
+                explore their talents,
+                and enjoy a beautiful interactive fan journey.
 
-        <button id="startBtn">
+            </p>
 
-            Start Journey
+            <button id="startBtn">
 
-        </button>
+                Start Journey
 
-    </div>
+            </button>
 
-</section>
-
-
-<!-- ========================= -->
-<!-- PAGE 2 -->
-<!-- ========================= -->
-
-<section id="biasPage" class="page">
-
-    <h2>
-
-        Who is your Bias?
-
-    </h2>
-
-    <div class="member-grid">
-
-        <div class="member-card" data-member="jay">
-            <img src="images/jay.jpg">
-            <h3>Jay</h3>
         </div>
 
-        <div class="member-card" data-member="jungwon">
-            <img src="images/jungwon.jpg">
-            <h3>Jungwon</h3>
+    </section>
+
+    <!-- =========================
+         PAGE 2 - BIAS SELECTION
+    ========================== -->
+
+    <section id="biasPage" class="page">
+
+        <div class="content">
+
+            <h2>
+
+                Who is your bias?
+
+            </h2>
+
+            <div class="memberGrid">
+                <!-- JUNGWON -->
+
+                <div class="memberCard" data-member="jungwon">
+
+                    <img src="images/jungwon.jpg" alt="Jungwon">
+
+                    <h3>Jungwon</h3>
+
+                </div>
+
+                <!-- HEESEUNG -->
+
+                <div class="memberCard" data-member="heeseung">
+
+                    <img src="images/heeseung.jpg" alt="Heeseung">
+
+                    <h3>Heeseung</h3>
+
+                </div>
+
+                <!-- JAY -->
+
+                <div class="memberCard" data-member="jay">
+
+                    <img src="images/jay.jpg" alt="Jay">
+
+                    <h3>Jay</h3>
+
+                </div>
+
+                <!-- JAKE -->
+
+                <div class="memberCard" data-member="jake">
+
+                    <img src="images/jake.jpg" alt="Jake">
+
+                    <h3>Jake</h3>
+
+                </div>
+
+                <!-- SUNGHOON -->
+
+                <div class="memberCard" data-member="sunghoon">
+
+                    <img src="images/sunghoon.jpg" alt="Sunghoon">
+
+                    <h3>Sunghoon</h3>
+
+                </div>
+
+                <!-- SUNOO -->
+
+                <div class="memberCard" data-member="sunoo">
+
+                    <img src="images/sunoo.jpg" alt="Sunoo">
+
+                    <h3>Sunoo</h3>
+
+                </div>
+
+                <!-- NI-KI -->
+
+                <div class="memberCard" data-member="niki">
+
+                    <img src="images/niki.jpg" alt="Ni-ki">
+
+                    <h3>Ni-ki</h3>
+
+                </div>
+
+            </div>
+
         </div>
 
-        <div class="member-card" data-member="heeseung">
-            <img src="images/heeseung.jpg">
-            <h3>Heeseung</h3>
+    </section>
+
+    <!-- =========================
+         PAGE 3 - TALENT
+    ========================== -->
+
+    <section id="talentPage" class="page">
+
+        <div class="content">
+
+            <img
+                id="talentImage"
+                src=""
+                alt="Selected Member">
+
+            <h2 id="talentHeading">
+
+            </h2>
+
+            <p id="talentDescription">
+
+            </p>
+
+            <button id="continueBtn">
+
+                Continue
+
+            </button>
+
         </div>
 
-        <div class="member-card" data-member="jake">
-            <img src="images/jake.jpg">
-            <h3>Jake</h3>
-        </div>
+    </section>
+        <!-- =========================
+         PAGE 4 - PROFILE
+    ========================== -->
 
-        <div class="member-card" data-member="sunghoon">
-            <img src="images/sunghoon.jpg">
-            <h3>Sunghoon</h3>
-        </div>
+    <section id="profilePage" class="page">
 
-        <div class="member-card" data-member="sunoo">
-            <img src="images/sunoo.jpg">
-            <h3>Sunoo</h3>
-        </div>
+        <div class="content profileContent">
 
-        <div class="member-card" data-member="niki">
-            <img src="images/niki.jpg">
-            <h3>Ni-ki</h3>
-        </div>
+            <img
+                id="profileImage"
+                src=""
+                alt="Selected Member">
 
-    </div>
+            <h2 id="profileName">
 
-</section>
+            </h2>
 
+            <div class="profileCard">
 
+                <p>
+                    <strong>Birthday:</strong>
+                    <span id="birthday"></span>
+                </p>
 
-<!-- ========================= -->
-<!-- PAGE 3 -->
-<!-- ========================= -->
+                <p>
+                    <strong>Position:</strong>
+                    <span id="position"></span>
+                </p>
 
-<section id="talentPage" class="page">
+                <p>
+                    <strong>Nationality:</strong>
+                    <span id="nationality"></span>
+                </p>
 
-    <div class="container">
+                <p>
+                    <strong>Zodiac:</strong>
+                    <span id="zodiac"></span>
+                </p>
 
-        <img id="talentImage"
-             src=""
-             alt="Member">
+                <p>
+                    <strong>Special Fact:</strong>
+                    <span id="fact"></span>
+                </p>
 
-        <h2 id="talentTitle">
+            </div>
 
-        </h2>
+            <button id="restartBtn">
 
-        <p id="talentDescription">
-
-        </p>
-
-        <button id="continueBtn">
-
-            Continue
-
-        </button>
-
-    </div>
-
-</section>
-
-
-
-
-<!-- ========================= -->
-<!-- PAGE 4 -->
-<!-- ========================= -->
-
-<section id="profilePage" class="page">
-
-    <div class="container">
-
-        <img id="profileImage"
-             src=""
-             alt="Member">
-
-        <h2 id="profileName">
-
-        </h2>
-
-        <p id="birthday">
-
-        </p>
-
-        <p id="position">
-
-        </p>
-
-        <p id="nationality">
-
-        </p>
-
-        <p id="zodiac">
-
-        </p>
-
-        <p id="funFact">
-
-        </p>
-
-        <a id="knifeSong"
-           href="#"
-           target="_blank">
-
-            🎵 Listen to Knife
-
-        </a>
-
-    </div>
-
-</section>
-
-
-
-<script src="script.js"></script>
-
-</body>
-  
-
-</html>
+                Choose
+                
+                
