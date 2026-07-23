@@ -1,247 +1,82 @@
-<!DOCTYPE html>
-<html lang="en">
-
+  <!DOCTYPE html>
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>ENHYPEN Bias Experience</title>
-
     <link rel="stylesheet" href="style.css">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-    <!-- =========================
-         PAGE 1 - WELCOME
-    ========================== -->
-
-    <section id="welcomePage" class="page active">
-
-        <div class="overlay"></div>
-
-        <div class="content">
-
-            <img
-                src="images/ot7.jpg"
-                alt="ENHYPEN OT7"
-                class="heroImage">
-
-            <h1>
-                Welcome to the<br>
-                ENHYPEN Bias Experience
-            </h1>
-
-            <p>
-
-                Discover your favorite member,
-                explore their talents,
-                and enjoy a beautiful interactive fan journey.
-
-            </p>
-
-            <button id="startBtn">
-
-                Start Journey
-
-            </button>
-
-        </div>
-
-    </section>
-
-    <!-- =========================
-         PAGE 2 - BIAS SELECTION
-    ========================== -->
-
-    <section id="biasPage" class="page">
-
-        <div class="content">
-
-            <h2>
-
-                Who is your bias?
-
-            </h2>
-
-            <div class="memberGrid">
-                <!-- JUNGWON -->
-
-                <div class="memberCard" data-member="jungwon">
-
-                    <img src="images/jungwon,jpg" alt="Jungwon">
-
-                    <h3>Jungwon</h3>
-
-                </div>
-
-                <!-- HEESEUNG -->
-
-                <div class="memberCard" data-member="heeseung">
-
-                    <img src="images/heeseung.jpg" alt="Heeseung">
-
-                    <h3>Heeseung</h3>
-
-                </div>
-
-                <!-- JAY -->
-
-                <div class="memberCard" data-member="jay">
-
-                    <img src="images/jay.jpg" alt="Jay">
-
-                    <h3>Jay</h3>
-
-                </div>
-
-                <!-- JAKE -->
-
-                <div class="memberCard" data-member="jake">
-
-                    <img src="images/jake.jpg" alt="Jake">
-
-                    <h3>Jake</h3>
-
-                </div>
-
-                <!-- SUNGHOON -->
-
-                <div class="memberCard" data-member="sunghoon">
-
-                    <img src="images/sunghoon.jpg" alt="Sunghoon">
-
-                    <h3>Sunghoon</h3>
-
-                </div>
-
-                <!-- SUNOO -->
-
-                <div class="memberCard" data-member="sunoo">
-
-                    <img src="images/sunoo.jpg" alt="Sunoo">
-
-                    <h3>Sunoo</h3>
-
-                </div>
-
-                <!-- NI-KI -->
-
-                <div class="memberCard" data-member="niki">
-
-                    <img src="images/niki,jpg" alt="Ni-ki">
-
-                    <h3>Ni-ki</h3>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
-<!-- =========================
-     PAGE 3 - TALENT
-========================== -->
-
-<section id="talentPage" class="page">
-
-    <div class="content">
-
-        <img
-            id="talentImage"
-            src=""
-            alt="Selected Member">
-
-        <h2 id="talentHeading">
-            
-        </h2>
-
-        <p id="talentDescription">
-
-        </p>
-
-        <button id="continueBtn">
-
-            Continue
-
-        </button>
-
-    </div>
-
+<audio autoplay loop>
+    <source src="music/background.mp3" type="audio/mp3">
+</audio>
+
+<section class="hero">
+    <h1>Welcome to ENHYPEN World 🖤</h1>
+    <p>Your ultimate bias experience</p>
+    <img src="images/ot7.jpg" class="main-img">
 </section>
 
-    <!-- =========================
-     PAGE 4 - PROFILE
-========================== -->
 
-<section id="profilePage" class="page">
+<h2>Choose Your Bias ✨</h2>
 
-    <div class="content profileContent">
+<div class="members">
 
-        <img
-            id="profileImage"
-            src=""
-            alt="Selected Member">
-
-        <h2 id="profileName">
-
-        </h2>
-
-
-        <div class="profileCard">
-
-            <p>
-                <strong>Birthday:</strong>
-                <span id="birthday"></span>
-            </p>
-
-            <p>
-                <strong>Position:</strong>
-                <span id="position"></span>
-            </p>
-
-            <p>
-                <strong>Nationality:</strong>
-                <span id="nationality"></span>
-            </p>
-
-            <p>
-                <strong>Zodiac:</strong>
-                <span id="zodiac"></span>
-            </p>
-
-            <p>
-                <strong>Special Fact:</strong>
-                <span id="fact"></span>
-            </p>
-
-        </div>
-
-
-        <button id="restartBtn">
-
-            Choose Another Bias
-
-        </button>
-
-
+    <div class="card">
+        <img src="images/jungwon.jpg">
+        <h3>Jungwon</h3>
+        <button onclick="showMessage('Jungwon is your leader 🐱')">Click</button>
     </div>
 
-  </section>
 
-<audio id="bgMusic" loop>
-    <source src="music/background.mp3" type="audio/mpeg">
-</audio>
+    <div class="card">
+        <img src="images/heeseung.jpg">
+        <h3>Heeseung</h3>
+        <button onclick="showMessage('Heeseung is your ace ⭐')">Click</button>
+    </div>
+
+
+    <div class="card">
+        <img src="images/jay.jpg">
+        <h3>Jay</h3>
+        <button onclick="showMessage('Jay is your fashion king 🔥')">Click</button>
+    </div>
+
+
+    <div class="card">
+        <img src="images/jake.jpg">
+        <h3>Jake</h3>
+        <button onclick="showMessage('Jake is your sunshine 🐶')">Click</button>
+    </div>
+
+
+    <div class="card">
+        <img src="images/sunghoon.jpg">
+        <h3>Sunghoon</h3>
+        <button onclick="showMessage('Sunghoon is your ice prince ❄️')">Click</button>
+    </div>
+
+
+    <div class="card">
+        <img src="images/sunoo.jpg">
+        <h3>Sunoo</h3>
+        <button onclick="showMessage('Sunoo brings happiness 🌸')">Click</button>
+    </div>
+
+
+    <div class="card">
+        <img src="images/niki.jpg">
+        <h3>Ni-ki</h3>
+        <button onclick="showMessage('Ni-ki is your dance king 🕺')">Click</button>
+    </div>
+
+</div>
+
+
+<div id="message"></div>
+
 
 <script src="script.js"></script>
 
 </body>
-</html>  
-                
+</html>   
