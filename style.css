@@ -1,0 +1,679 @@
+/* ===========================
+   GOOGLE FONT
+=========================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* ===========================
+   RESET
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+/* ===========================
+   BODY
+=========================== */
+
+body{
+
+    min-height:100vh;
+
+    background:linear-gradient(
+    135deg,
+    #090014,
+    #17022b,
+    #24004d,
+    #10001f);
+
+    overflow-x:hidden;
+
+    color:white;
+
+}
+
+/* ===========================
+   ANIMATED BACKGROUND
+=========================== */
+
+body::before{
+
+content:"";
+
+position:fixed;
+
+top:0;
+
+left:0;
+
+width:100%;
+
+height:100%;
+
+background:
+
+radial-gradient(circle,#ffffff22 2px,transparent 2px);
+
+background-size:45px 45px;
+
+animation:stars 50s linear infinite;
+
+z-index:-2;
+
+opacity:.4;
+
+}
+
+@keyframes stars{
+
+0%{
+
+transform:translateY(0px);
+
+}
+
+100%{
+
+transform:translateY(-600px);
+
+}
+
+}
+
+/* ===========================
+   PAGE
+=========================== */
+
+.page{
+
+display:none;
+
+min-height:100vh;
+
+justify-content:center;
+
+align-items:center;
+
+padding:50px;
+
+animation:fade .8s ease;
+
+}
+
+.page.active{
+
+display:flex;
+
+}
+
+@keyframes fade{
+
+from{
+
+opacity:0;
+
+transform:translateY(25px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
+
+/* ===========================
+   CONTAINER
+=========================== */
+
+.container{
+
+width:90%;
+
+max-width:900px;
+
+margin:auto;
+
+text-align:center;
+
+padding:40px;
+
+border-radius:25px;
+
+background:rgba(255,255,255,.08);
+
+backdrop-filter:blur(18px);
+
+box-shadow:
+
+0 0 30px rgba(167,87,255,.3);
+
+}
+
+/* ===========================
+   WELCOME IMAGE
+=========================== */
+
+.ot7-image{
+
+width:100%;
+
+max-width:700px;
+
+border-radius:20px;
+
+margin-bottom:30px;
+
+box-shadow:
+
+0 0 30px rgba(194,124,255,.45);
+
+transition:.4s;
+
+}
+
+.ot7-image:hover{
+
+transform:scale(1.02);
+
+}
+
+/* ===========================
+   HEADINGS
+=========================== */
+
+h1{
+
+font-size:48px;
+
+margin-bottom:20px;
+
+color:#ffffff;
+
+text-shadow:
+
+0 0 18px #b566ff;
+
+}
+
+h2{
+
+font-size:40px;
+
+margin-bottom:35px;
+
+color:#f1ddff;
+
+text-shadow:
+
+0 0 12px #b566ff;
+
+}
+
+h3{
+
+margin-top:15px;
+
+font-size:22px;
+
+}
+
+/* ===========================
+   PARAGRAPH
+=========================== */
+
+p{
+
+font-size:18px;
+
+line-height:1.8;
+
+color:#f2e9ff;
+
+margin-bottom:30px;
+
+}
+
+/* ===========================
+   BUTTONS
+=========================== */
+
+button{
+
+padding:16px 42px;
+
+border:none;
+
+border-radius:50px;
+
+background:linear-gradient(
+45deg,
+#9d4edd,
+#c77dff);
+
+font-size:18px;
+
+font-weight:600;
+
+color:white;
+
+cursor:pointer;
+
+transition:.4s;
+
+box-shadow:
+
+0 0 20px rgba(197,110,255,.5);
+
+}
+
+button:hover{
+
+transform:translateY(-5px);
+
+box-shadow:
+
+0 0 40px rgba(212,153,255,.9);
+
+}
+
+/* ===========================
+   MEMBER GRID
+=========================== */
+
+.member-grid{
+
+display:grid;
+
+grid-template-columns:
+repeat(auto-fit,minmax(220px,1fr));
+
+gap:35px;
+
+width:100%;
+
+max-width:1200px;
+
+margin:auto;
+
+}
+
+/* ===========================
+   MEMBER CARD
+=========================== */
+
+.member-card{
+
+background:rgba(255,255,255,.08);
+
+padding:20px;
+
+border-radius:20px;
+
+cursor:pointer;
+
+transition:.4s;
+
+backdrop-filter:blur(15px);
+
+border:1px solid rgba(255,255,255,.08);
+
+box-shadow:
+
+0 0 18px rgba(0,0,0,.4);
+
+}
+/* ===========================
+   MEMBER CARD HOVER
+=========================== */
+
+.member-card:hover{
+
+transform:translateY(-12px) scale(1.05);
+
+box-shadow:
+0 0 35px rgba(197,110,255,.8);
+
+background:rgba(255,255,255,.15);
+
+}
+
+/* ===========================
+   MEMBER IMAGES
+=========================== */
+
+.member-card img{
+
+width:100%;
+
+height:280px;
+
+object-fit:cover;
+
+border-radius:15px;
+
+transition:.4s;
+
+box-shadow:
+0 0 18px rgba(255,255,255,.2);
+
+}
+
+.member-card:hover img{
+
+transform:scale(1.05);
+
+}
+
+/* ===========================
+   TALENT IMAGE
+=========================== */
+
+#talentImage{
+
+width:300px;
+
+height:300px;
+
+object-fit:cover;
+
+border-radius:20px;
+
+margin-bottom:25px;
+
+box-shadow:
+0 0 35px rgba(197,110,255,.6);
+
+}
+
+/* ===========================
+   PROFILE IMAGE
+=========================== */
+
+#profileImage{
+
+width:300px;
+
+height:300px;
+
+object-fit:cover;
+
+border-radius:20px;
+
+margin-bottom:25px;
+
+box-shadow:
+0 0 35px rgba(197,110,255,.6);
+
+}
+
+/* ===========================
+   PROFILE TEXT
+=========================== */
+
+#profileName{
+
+font-size:40px;
+
+margin-bottom:20px;
+
+color:#ffffff;
+
+text-shadow:0 0 15px #c77dff;
+
+}
+
+#birthday,
+#position,
+#nationality,
+#zodiac,
+#funFact{
+
+font-size:19px;
+
+margin:12px 0;
+
+}
+
+/* ===========================
+   KNIFE BUTTON
+=========================== */
+
+#knifeSong{
+
+display:inline-block;
+
+margin-top:30px;
+
+padding:16px 35px;
+
+border-radius:50px;
+
+text-decoration:none;
+
+font-weight:600;
+
+font-size:18px;
+
+color:white;
+
+background:linear-gradient(
+45deg,
+#8b5cf6,
+#d946ef);
+
+transition:.4s;
+
+box-shadow:
+0 0 25px rgba(212,153,255,.5);
+
+}
+
+#knifeSong:hover{
+
+transform:translateY(-5px);
+
+box-shadow:
+0 0 40px rgba(212,153,255,.9);
+
+}
+
+/* ===========================
+   SCROLLBAR
+=========================== */
+
+::-webkit-scrollbar{
+
+width:10px;
+
+}
+
+::-webkit-scrollbar-track{
+
+background:#120021;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+background:#9d4edd;
+
+border-radius:10px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+background:#c77dff;
+
+}
+
+/* ===========================
+   MOBILE RESPONSIVE
+=========================== */
+
+@media(max-width:992px){
+
+.member-grid{
+
+grid-template-columns:
+repeat(2,1fr);
+
+gap:25px;
+
+}
+
+h1{
+
+font-size:40px;
+
+}
+
+h2{
+
+font-size:34px;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.page{
+
+padding:25px;
+
+}
+
+.container{
+
+padding:25px;
+
+}
+
+.member-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.ot7-image{
+
+max-width:100%;
+
+}
+
+#talentImage,
+#profileImage{
+
+width:220px;
+
+height:220px;
+
+}
+
+button{
+
+width:100%;
+
+}
+
+#knifeSong{
+
+width:100%;
+
+text-align:center;
+
+}
+
+h1{
+
+font-size:30px;
+
+}
+
+h2{
+
+font-size:28px;
+
+}
+
+p{
+
+font-size:16px;
+
+}
+
+}
+
+@media(max-width:480px){
+
+.member-card img{
+
+height:240px;
+
+}
+
+#talentImage,
+#profileImage{
+
+width:180px;
+
+height:180px;
+
+}
+
+.container{
+
+padding:20px;
+
+}
+
+}
+
+/* ===========================
+   GLOW ANIMATION
+=========================== */
+
+@keyframes glow{
+
+0%{
+
+box-shadow:0 0 15px rgba(197,110,255,.4);
+
+}
+
+50%{
+
+box-shadow:0 0 35px rgba(212,153,255,.9);
+
+}
+
+100%{
+
+box-shadow:0 0 15px rgba(197,110,255,.4);
+
+}
+
+}
+
+button,
+#knifeSong{
+
+animation:glow 3s infinite;
+
+}
+
+/* ===========================
+   FLOAT ANIMATION
+=========================== */
+
+@
