@@ -43,7 +43,6 @@ enhypen-bias-experience/
 ├── index.html
 ├── style.css
 ├── script.js
-├── README.md
 │
 ├── images/
 │   ├── ot7.jpg
@@ -56,7 +55,7 @@ enhypen-bias-experience/
 │   └── niki.jpg
 │
 └── music/
-    └── background.mp3 (optional)
+    └── background.mp3
 ```
 
 ---
