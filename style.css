@@ -1,568 +1,63 @@
-/* ==========================
-   ENHYPEN Bias Experience
-   STYLE.CSS - PART 1
-========================== */
-
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
-
-/* Reset */
-
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:'Poppins',sans-serif;
-}
-
-/* Body */
-
 body{
-
-    background:
-    linear-gradient(135deg,#070012,#18002f,#25004d);
-
+    background:#0b0b0b;
     color:white;
-
-    overflow-x:hidden;
-
-    min-height:100vh;
-
-}
-
-/* Animated Stars */
-
-body::before{
-
-    content:"";
-
-    position:fixed;
-
-    top:0;
-    left:0;
-
-    width:100%;
-    height:100%;
-
-    background-image:
-    radial-gradient(white 1px, transparent 1px);
-
-    background-size:45px 45px;
-
-    opacity:.18;
-
-    animation:moveStars 80s linear infinite;
-
-    z-index:-2;
-
-}
-
-@keyframes moveStars{
-
-    from{
-
-        transform:translateY(0);
-
-    }
-
-    to{
-
-        transform:translateY(-900px);
-
-    }
-
-}
-
-/* Page */
-
-.page{
-
-    display:none;
-
-    min-height:100vh;
-
-    justify-content:center;
-
-    align-items:center;
-
-    padding:40px;
-
-    animation:fade .8s ease;
-
-}
-
-.page.active{
-
-    display:flex;
-
-}
-
-@keyframes fade{
-
-    from{
-
-        opacity:0;
-        transform:translateY(25px);
-
-    }
-
-    to{
-
-        opacity:1;
-        transform:translateY(0);
-
-    }
-
-}
-
-/* Overlay */
-
-.overlay{
-
-    position:absolute;
-
-    inset:0;
-
-    background:
-    rgba(0,0,0,.45);
-
-}
-
-/* Main Content */
-
-.content{
-
-    position:relative;
-
-    z-index:2;
-
-    width:90%;
-    max-width:1000px;
-
-    margin:auto;
-
+    font-family:Arial;
     text-align:center;
-
-    padding:40px;
-
-    border-radius:25px;
-
-    backdrop-filter:blur(15px);
-
-    background:
-    rgba(255,255,255,.08);
-
-    border:
-    1px solid rgba(255,255,255,.08);
-
-    box-shadow:
-    0 0 35px rgba(162,92,255,.25);
-
 }
 
-/* Hero Image */
 
-.heroImage{
+.hero{
+    padding:30px;
+}
 
-    width:100%;
 
+.main-img{
+    width:80%;
     max-width:700px;
-
     border-radius:20px;
-
-    margin-bottom:30px;
-
-    transition:.4s;
-
-    box-shadow:
-    0 0 30px rgba(183,126,255,.45);
-
 }
 
-.heroImage:hover{
 
-    transform:scale(1.02);
-
+.members{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:20px;
 }
 
-/* Headings */
 
-h1{
-
-    font-size:3rem;
-
-    margin-bottom:20px;
-
-    text-shadow:
-    0 0 20px #b96cff;
-
+.card{
+    background:#1c1c1c;
+    padding:15px;
+    border-radius:20px;
+    width:200px;
 }
 
-h2{
 
-    font-size:2.4rem;
-
-    margin-bottom:35px;
-
-    text-shadow:
-    0 0 15px #b96cff;
-
+.card img{
+    width:100%;
+    height:230px;
+    object-fit:cover;
+    border-radius:15px;
 }
 
-h3{
-
-    margin-top:15px;
-
-    font-size:1.2rem;
-
-}
-
-/* Paragraph */
-
-p{
-
-    line-height:1.8;
-
-    font-size:18px;
-
-    color:#f2ecff;
-
-    margin-bottom:30px;
-
-}
-
-/* Buttons */
 
 button{
-
-    padding:15px 40px;
-
+    background:white;
     border:none;
-
-    border-radius:50px;
-
+    padding:10px 20px;
+    border-radius:20px;
     cursor:pointer;
-
-    color:white;
-
-    font-size:18px;
-
-    font-weight:600;
-
-    background:
-    linear-gradient(45deg,#8b5cf6,#d946ef);
-
-    transition:.35s;
-
-    box-shadow:
-    0 0 20px rgba(201,135,255,.45);
-
 }
+
 
 button:hover{
-
-    transform:translateY(-5px);
-
-    box-shadow:
-    0 0 35px rgba(221,170,255,.85);
-
-}
-/* ==========================
-   STYLE.CSS - PART 2
-========================== */
-
-/* Member Grid */
-
-.memberGrid{
-
-    display:grid;
-
-    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-
-    gap:30px;
-
-    margin-top:30px;
-
+    background:#ff4d8d;
+    color:white;
 }
 
-/* Member Card */
 
-.memberCard{
-
-    background:rgba(255,255,255,.08);
-
-    border:1px solid rgba(255,255,255,.08);
-
-    border-radius:20px;
-
-    padding:20px;
-
-    cursor:pointer;
-
-    transition:.4s;
-
-    backdrop-filter:blur(15px);
-
+#message{
+    margin:30px;
+    font-size:25px;
 }
-
-.memberCard:hover{
-
-    transform:translateY(-10px);
-
-    box-shadow:0 0 30px rgba(183,126,255,.7);
-
-    background:rgba(255,255,255,.14);
-
-}
-
-.memberCard img{
-
-    width:100%;
-
-    height:280px;
-
-    object-fit:cover;
-
-    border-radius:15px;
-
-    transition:.4s;
-
-}
-
-.memberCard:hover img{
-
-    transform:scale(1.04);
-
-}
-
-/* Talent Image */
-
-#talentImage{
-
-    width:280px;
-
-    height:280px;
-
-    object-fit:cover;
-
-    border-radius:20px;
-
-    margin-bottom:25px;
-
-    box-shadow:0 0 30px rgba(183,126,255,.6);
-
-}
-
-/* Profile */
-
-.profileContent{
-
-    max-width:700px;
-
-}
-
-#profileImage{
-
-    width:260px;
-
-    height:260px;
-
-    object-fit:cover;
-
-    border-radius:20px;
-
-    margin-bottom:25px;
-
-    box-shadow:0 0 30px rgba(183,126,255,.6);
-
-}
-
-.profileCard{
-
-    background:rgba(255,255,255,.08);
-
-    border-radius:20px;
-
-    padding:25px;
-
-    margin:30px auto;
-
-    text-align:left;
-
-    border:1px solid rgba(255,255,255,.08);
-
-}
-
-.profileCard p{
-
-    margin:15px 0;
-
-    font-size:18px;
-
-}
-
-.profileCard strong{
-
-    color:#d9a8ff;
-
-}
-
-/* Floating Animation */
-
-@keyframes floating{
-
-    0%{
-
-        transform:translateY(0);
-
-    }
-
-    50%{
-
-        transform:translateY(-8px);
-
-    }
-
-    100%{
-
-        transform:translateY(0);
-
-    }
-
-}
-
-.heroImage,
-#talentImage,
-#profileImage{
-
-    animation:floating 4s ease-in-out infinite;
-
-}
-
-/* Button Glow */
-
-@keyframes glow{
-
-    0%{
-
-        box-shadow:0 0 15px rgba(183,126,255,.4);
-
-    }
-
-    50%{
-
-        box-shadow:0 0 35px rgba(221,170,255,.9);
-
-    }
-
-    100%{
-
-        box-shadow:0 0 15px rgba(183,126,255,.4);
-
-    }
-
-}
-
-button{
-
-    animation:glow 3s infinite;
-
-}
-
-/* Scrollbar */
-
-::-webkit-scrollbar{
-
-    width:10px;
-
-}
-
-::-webkit-scrollbar-track{
-
-    background:#150027;
-
-}
-
-::-webkit-scrollbar-thumb{
-
-    background:#9d4edd;
-
-    border-radius:20px;
-
-}
-
-::-webkit-scrollbar-thumb:hover{
-
-    background:#c77dff;
-
-}
-
-/* Responsive */
-
-@media(max-width:768px){
-
-    h1{
-
-        font-size:2.2rem;
-
-    }
-
-    h2{
-
-        font-size:1.9rem;
-
-    }
-
-    .content{
-
-        padding:25px;
-
-    }
-
-    .memberGrid{
-
-        grid-template-columns:1fr;
-
-    }
-
-    .heroImage{
-
-        max-width:100%;
-
-    }
-
-    #talentImage,
-    #profileImage{
-
-        width:220px;
-
-        height:220px;
-
-    }
-
-    button{
-
-        width:100%;
-
-    }
-
-}
-
-@media(max-width:480px){
-
-    .memberCard img{
-
-        height:240px;
-
-    }
-
-    #talentImage,
-    #profileImage{
-
-        width:180px;
-
-        height:180px;
-
-    }
-
-}
-
